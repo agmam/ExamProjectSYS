@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  examprojectsys:
+    image: examprojectsys
+    build:
+      context: .
+      dockerfile: ExamProjectSYS/Dockerfile
+
+  projectapi:
+    image: projectapi
+    build:
+      context: .
+      dockerfile: ProjectAPI/Dockerfile
+
+
+  employeeapi:
+    image: employeeapi
+    build:
+      context: .
+      dockerfile: EmployeeAPI/Dockerfile
+
+
+  departmentapi:
+    image: departmentapi
+    build:
+      context: .
+      dockerfile: DepartmentAPI/Dockerfile
+
